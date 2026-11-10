@@ -52,14 +52,15 @@ Guidelines:
 - Preserve numerical correctness across supported backends,
   within documented tolerances.
 
-## Python conventions
+## Python environment
 
-- Follow the Python version specified by the project.
-- Prefer type hints and clear function boundaries.
-- Make experiments deterministic where practical.
-- Separate exploratory scripts from reusable modules.
-- Avoid unnecessary dependencies.
-- Do not automatically port prototypes to C++.
+- Target Python 3.12.
+- Use Miniforge and the `vista` Conda environment.
+- Do not install packages into the Conda base environment.
+- Do not modify the system Python installation.
+- NVIDIA VPI Python bindings may require system Python.
+- Do not install or upgrade dependencies without approval.
+- Keep the Python environment reproducible using environment.yml.
 
 ## C++ conventions
 
